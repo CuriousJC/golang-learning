@@ -19,6 +19,14 @@ func Myhello() {
 	}
 
 	fmt.Println("And now we're done...")
+
+	fmt.Println("or maybe not...")
+
+	fmt.Println("seriously...")
+
+	fmt.Println("how are you just showing up?")
+
+	fmt.Println("And now we're done...")
 }
 
 func Mygoodbye() string {

@@ -1,20 +1,19 @@
 package hello
 
 import "fmt"
-import "os"
-import "strconv"
 import "math/rand"
 import crand "crypto/rand"
 import "time"
 
-func Mycompare() {
+func Mycompare(NumberOfInts int) {
 	// User must pass in number of integers to generate
-	if len(os.Args) < 2 {
+	if NumberOfInts < 2 {
 		println("Usage:\n")
 		println("  go run compare.go <numberOfInts>")
 		return
 	}
-	n, err := strconv.Atoi(os.Args[1])
+	n := NumberOfInts
+	err := error(nil)
 	if err != nil { // Maybe they didn't pass an integer
 		panic(err)
 	}

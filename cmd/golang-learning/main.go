@@ -6,5 +6,9 @@ import "github.com/curiousjc/golang-learning/hello"
 func main() {
 	fmt.Println("Hello!!!")
 
-	fmt.Println(hello.mygoodbye())
+	fmt.Println(hello.Mygoodbye())
+
+	hello.Myhello()
+
+	hello.Mycompare(555555)
 }
