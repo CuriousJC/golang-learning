@@ -1,0 +1,15 @@
+
+go run .
+go run ../hello
+
+
+#need to get packages
+go get rsc.io/quote
+
+
+go.work is used to setup worksapces for multiple modules and capture them in scope
+https://github.com/golang/tools/blob/master/gopls/doc/workspace.md
+
+go work use ./greetings
+go work use .
+
