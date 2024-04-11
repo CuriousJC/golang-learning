@@ -1,8 +1,8 @@
-package main
+package hello
 
 import "github.com/google/uuid"
 
-func main() {
+func myuuid() {
 	for i := 0; i < 5; i++ {
 		println(uuid.New().String())
 	}

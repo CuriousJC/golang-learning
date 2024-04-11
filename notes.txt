@@ -1,7 +1,7 @@
 
-go run .
-go run ../hello
-
+go run hello/compare.go 55
+go run hello/hello.go
+go run hello/uuid.go
 
 #need to get packages
 go get rsc.io/quote

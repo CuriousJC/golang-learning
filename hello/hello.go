@@ -1,4 +1,4 @@
-package main
+package hello
 
 import "fmt"
 
@@ -6,11 +6,9 @@ import "rsc.io/quote"
 
 import "math/rand"
 
-import crand "crypto/rand"
-
 import "time"
 
-func main() {
+func myhello() {
 	fmt.Println(quote.Go())
 
 	now := time.Now()

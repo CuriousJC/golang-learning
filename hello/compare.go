@@ -1,4 +1,4 @@
-package main
+package hello
 
 import "fmt"
 import "os"
@@ -7,7 +7,7 @@ import "math/rand"
 import crand "crypto/rand"
 import "time"
 
-func main() {
+func mycompare() {
 	// User must pass in number of integers to generate
 	if len(os.Args) < 2 {
 		println("Usage:\n")
