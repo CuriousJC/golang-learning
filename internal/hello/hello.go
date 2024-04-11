@@ -17,18 +17,8 @@ func Myhello() {
 	for i := 0; i < 5; i++ {
 		println(rand.Intn(10))
 	}
-
-	fmt.Println("And now we're done...")
-
-	fmt.Println("or maybe not...")
-
-	fmt.Println("seriously...")
-
-	fmt.Println("how are you just showing up?")
-
-	fmt.Println("And now we're done...")
 }
 
-func Mygoodbye() string {
+func FromAModule() string {
 	return "Hello from a module!"
 }
