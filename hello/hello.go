@@ -8,7 +8,7 @@ import "math/rand"
 
 import "time"
 
-func myhello() {
+func Myhello() {
 	fmt.Println(quote.Go())
 
 	now := time.Now()
@@ -21,6 +21,6 @@ func myhello() {
 	fmt.Println("And now we're done...")
 }
 
-func mygoodbye() string {
+func Mygoodbye() string {
 	return "Hello from a module!"
 }

@@ -7,7 +7,7 @@ import "math/rand"
 import crand "crypto/rand"
 import "time"
 
-func mycompare() {
+func Mycompare() {
 	// User must pass in number of integers to generate
 	if len(os.Args) < 2 {
 		println("Usage:\n")
