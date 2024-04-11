@@ -20,3 +20,7 @@ func myhello() {
 
 	fmt.Println("And now we're done...")
 }
+
+func mygoodbye() string {
+	return "Hello from a module!"
+}
