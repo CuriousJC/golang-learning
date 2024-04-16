@@ -3,7 +3,7 @@ package random
 import "math/rand"
 import "time"
 
-func GetRandom() int {
+func Get() int {
 	// User must pass in number of integers to generate
 
 	err := error(nil)
@@ -13,5 +13,4 @@ func GetRandom() int {
 	start := time.Now()
 	rand.Seed(start.UnixNano())
 	return rand.Intn(256)
-
 }

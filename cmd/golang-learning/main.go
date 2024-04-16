@@ -14,5 +14,5 @@ func main() {
 	hello.Mycompare(555555)
 
 	fmt.Println("We have a random number coming from pkg and it is...")
-	fmt.Println(random.GetRandom())
+	fmt.Println(random.Get())
 }
