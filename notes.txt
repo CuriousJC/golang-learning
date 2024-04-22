@@ -13,3 +13,6 @@ https://github.com/golang/tools/blob/master/gopls/doc/workspace.md
 go work use ./greetings
 go work use .
 
+
+git tag -a v1.0.0 -m "Externally referenced release version 1.0.0"
+git push --tags
