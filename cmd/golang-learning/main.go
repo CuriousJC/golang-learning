@@ -5,6 +5,7 @@ import "github.com/curiousjc/golang-learning/internal/hello"
 import "github.com/curiousjc/golang-learning/pkg/random"
 import "github.com/curiousjc/golang-learning/pkg/goodbye"
 import "github.com/curiousjc/golang-learning/pkg/conversation"
+import "github.com/curiousjc/golang-learning/pkg/fizzbuzz"
 
 func main() {
 	fmt.Println("Hello!!!")
@@ -21,4 +22,7 @@ func main() {
 	fmt.Println(goodbye.Goodbye())
 
 	fmt.Println(conversation.Get())
+
+	fizzbuzz.Fizzbuzz()
+
 }

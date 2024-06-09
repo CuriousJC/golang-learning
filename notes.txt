@@ -16,3 +16,6 @@ go work use .
 
 git tag -a v1.0.0 -m "Externally referenced release version 1.0.0"
 git push --tags
+
+
+ go run cmd/golang-learning/main.go
