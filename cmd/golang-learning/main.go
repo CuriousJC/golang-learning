@@ -1,6 +1,7 @@
 package main
 
-//go run c:\repos\golang-learning\cmd\golang-learning\main.go
+//cd c:\repos\golang-learning\
+//go run cmd\golang-learning\main.go
 
 import "fmt"
 import "github.com/curiousjc/golang-learning/internal/hello"
@@ -9,25 +10,36 @@ import "github.com/curiousjc/golang-learning/pkg/goodbye"
 import "github.com/curiousjc/golang-learning/pkg/conversation"
 import "github.com/curiousjc/golang-learning/pkg/fizzbuzz"
 import "github.com/curiousjc/golang-learning/pkg/runestuff"
+import "github.com/curiousjc/golang-learning/internal/recurse"
 
 func main() {
+	quiet := true
 	fmt.Println("Hello!!!")
 
-	fmt.Println(hello.FromAModule())
+	fibonacci := recurse.Fibonacci(10)
+	fmt.Println("Fibonacci result is: ", fibonacci)
 
-	hello.Myhello()
+	if !quiet {
+		factorial := recurse.Factorial(5)
+		fmt.Println("Factorial Result is: ", factorial)
 
-	hello.Mycompare(555555)
+		fmt.Println(hello.FromAModule())
 
-	fmt.Println("We have a random number coming from pkg and it is...")
-	fmt.Println(random.Get())
+		hello.Myhello()
 
-	fmt.Println(goodbye.Goodbye())
+		hello.Mycompare(555555)
 
-	fmt.Println(conversation.Get())
+		fmt.Println("We have a random number coming from pkg and it is...")
+		fmt.Println(random.Get())
 
-	fizzbuzz.Fizzbuzz()
+		fmt.Println(goodbye.Goodbye())
 
-	runestuff.Get()
+		fmt.Println(conversation.Get())
+
+		fizzbuzz.Fizzbuzz()
+
+		runestuff.Get()
+
+	}
 
 }
