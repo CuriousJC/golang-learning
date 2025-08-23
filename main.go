@@ -11,15 +11,19 @@ import "github.com/curiousjc/golang-learning/pkg/conversation"
 import "github.com/curiousjc/golang-learning/pkg/fizzbuzz"
 import "github.com/curiousjc/golang-learning/pkg/runestuff"
 import "github.com/curiousjc/golang-learning/internal/recurse"
+import "github.com/curiousjc/golang-learning/internal/concur"
 
 func main() {
 	quiet := true
-	fmt.Println("Hello!!!")
+	fmt.Printf("Hello, this is just throwaway stuff for playing around.  I am running in a quiet mode of: %t\n", quiet)
 
-	fibonacci := recurse.Fibonacci(10)
-	fmt.Println("Fibonacci result is: ", fibonacci)
+	concur.BoringChannelsOneQuit()
 
 	if !quiet {
+
+		fibonacci := recurse.Fibonacci(10)
+		fmt.Println("Fibonacci result is: ", fibonacci)
+
 		factorial := recurse.Factorial(5)
 		fmt.Println("Factorial Result is: ", factorial)
 
