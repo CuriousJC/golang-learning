@@ -17,7 +17,7 @@ func main() {
 	quiet := true
 	fmt.Printf("Hello, this is just throwaway stuff for playing around.  I am running in a quiet mode of: %t\n", quiet)
 
-	concur.BoringChannelsOneQuit()
+	concur.GeneratorMultiplex()
 
 	if !quiet {
 
